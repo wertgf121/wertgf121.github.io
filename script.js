@@ -5,7 +5,7 @@
           day = hour * 24;
           week = day * 7;
 
-    const eventDate = 10/15/2025
+    const eventDate = "10/15/2025"
     const itTickets = 213
     const webmasterRequests = 324
   
