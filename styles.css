@@ -59,6 +59,30 @@ li span {
     color: #ffaa5e;
 }
 
+/* IT Joke Section */
+#it-joke {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* background-color: #1b2735; */
+    color: #8d697a;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
+    max-width: 300px;
+    width: auto;
+    /* text-align: left; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  
+#it-joke p {
+    margin: 0;
+}
+#it-joke-title{
+    color:#544e68
+}
+
 /* Event Info Styling */
 #event-info {
     margin-top: 2rem;
