@@ -1,1 +1,41 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAMA Countdown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="headline">CAMA Countdown</h1>
+    <div id="countdown">
+      <ul>
+        <li class="units"><span id="weeks" class="numbers"></span> Weeks</li>
+        <li class="units"><span id="days" class="numbers"></span> days</li>
+        <li class="units"><span id="hours" class="numbers"></span> Hours</li>
+        <li class="units"><span id="minutes" class="numbers"></span> Minutes</li>
+        <li class="units"><span id="seconds" class="numbers"></span> Seconds</li>
+      </ul>
+    </div>
+
+    <!-- Additional info to be pulled from CSV -->
+    <div id="event-info">
+      <div class="event-item">
+        <p><strong>IT Tickets This Month:</strong> <span id="it-tickets">Loading...</span></p>
+      </div>
+      <div class="event-item">
+        <p><strong>Webmaster Requests This Month:</strong> <span id="webmaster-requests">Loading...</span></p>
+      </div>
+    </div>
+
+    <div id="content" class="emoji">
+      <span>🥳</span>
+      <span>🎉</span>
+      <span>🎂</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
