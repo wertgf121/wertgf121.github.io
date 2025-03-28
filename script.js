@@ -40,7 +40,5 @@
         document.getElementById("webmaster-requests").innerText = webmasterRequests;
     }
   
-    // Trigger CSV load and start countdown
-    loadDataFromCSV();
   }());
   
