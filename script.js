@@ -31,15 +31,6 @@
             document.getElementById("minutes").innerText = m,
             document.getElementById("seconds").innerText = s;
             
-            document.title = w + "W " + d + "D // " + fivePMHours + "H " + fivePMMinutes + "M " + fivePMSeconds + "S";
-  
-            // Do something later when date is reached
-            if (distance < 0) {
-                document.getElementById("headline").innerText = "The event has arrived!";
-                document.getElementById("countdown").style.display = "none";
-                document.getElementById("content").style.display = "block";
-                clearInterval(x);
-            }
         }, 0);
     }
   
