@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((response) => response.json())
       .then((data) => {
         const percent = Number(data.ARBPercent);
-        document.getElementById("percent-display").textContent = `${percent.toFixed(2)}% to ARB Validation`;
+        document.getElementById("percent-display").textContent = `${percent.toFixed(2)}% Protested Accounts Completed`;
       })
       .catch((error) => {
         console.error("Error loading JSON:", error);
