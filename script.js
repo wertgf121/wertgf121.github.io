@@ -9,15 +9,21 @@ updateDateTime(); // initial update
 setInterval(updateDateTime, 1000); // update every second
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("ARB_percent_value.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const percent = Number(data.ARBPercent);
-      document.getElementById("percent-display").textContent = `${percent.toFixed(2)}% to ARB Validation`;
-    })
-    .catch((error) => {
-      console.error("Error loading JSON:", error);
-    });
+  // Function to fetch and update percent
+  function fetchProgress() {
+    fetch(`ARB_percent_value.json?t=${Date.now()}`) // cache-busting query
+      .then((response) => response.json())
+      .then((data) => {
+        const percent = Number(data.ARBPercent);
+        document.getElementById("percent-display").textContent = `${percent.toFixed(2)}% to ARB Validation`;
+      })
+      .catch((error) => {
+        console.error("Error loading JSON:", error);
+      });
+  }
+
+  fetchProgress();              // Initial fetch
+  setInterval(fetchProgress, 60000);  // Fetch every 60 seconds
 });
 
 const second = 1000,
