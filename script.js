@@ -62,3 +62,8 @@ function startCountdown(eventDate) {
         document.getElementById("seconds").innerText = s;
     }, 1000);
 }
+
+// This will refresh the page every hour
+setTimeout(() => {
+  location.reload();
+}, 3600 * 1000); // 1 hour in milliseconds
